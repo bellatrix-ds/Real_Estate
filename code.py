@@ -11,7 +11,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 data = pd.read_csv("https://raw.githubusercontent.com/bellatrix-ds/Real_Estate/refs/heads/main/Anthill.csv")  
-
+st.write("ستون‌ها:", data.columns.tolist())
 data["قیمت"] = data["قیمت"].astype(str).str.replace(",", "").astype(float)
 
 data["طبقه"] = data["طبقه - واحد"].astype(str).str.extract(r"(\d+)").astype(float)
