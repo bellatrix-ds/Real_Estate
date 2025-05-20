@@ -21,7 +21,7 @@ data["طبقه"] = data["طبقه - واحد"].astype(str).str.extract(r"(\d+)")
 st.sidebar.title("فیلترها")
 
 # فیلتر املاکی
-agency_options = data["املاکی"].dropna().unique()
+agency_options = data["املاکی؟"].dropna().unique()
 selected_agency = st.sidebar.multiselect("انتخاب املاکی", agency_options, default=agency_options)
 
 # فیلتر اتاق
