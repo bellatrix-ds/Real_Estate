@@ -30,7 +30,7 @@ selected_rooms = st.sidebar.multiselect("تعداد اتاق", room_options, def
 
 # ---------------- Filtered Data ----------------
 filtered_data = data[
-    data["املاکی"].isin(selected_agency) &
+    data["املاکی؟"].isin(selected_agency) &
     data["اتاق"].isin(selected_rooms)
 ]
 
