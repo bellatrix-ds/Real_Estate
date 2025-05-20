@@ -10,7 +10,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("https://raw.githubusercontent.com/bellatrix-ds/Real_Estate/refs/heads/main/Anthill.csv",header=2)  
+data = pd.read_csv("https://raw.githubusercontent.com/bellatrix-ds/Real_Estate/refs/heads/main/Anthill.csv",header=1)  
 st.write("ستون‌ها:", data.columns.tolist())
 
 data["قیمت"] = data["قیمت"].astype(str).str.replace(",", "").astype(float)
